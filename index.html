@@ -77,14 +77,33 @@
         .cost-table th {
             background-color: #e9ecef;
             color: #212529;
+            text-align: center;
         }
-        .cost-table .total-row {
+        .cost-table td {
+            text-align: center;
+        }
+        .cost-table td:first-child {
+            text-align: left;
+            font-weight: 600;
+        }
+        .cost-table .subheader th {
+            background-color: #f8f9fa;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #495057;
+        }
+        .cost-table .total-row td {
             font-weight: 700;
             background-color: #f1f3f5;
             font-size: 1.1rem;
+            border-top: 2px solid #adb5bd;
         }
-        .cost-table .total-row td {
-            border-top: 2px solid #343a40;
+         .cost-table .per-person-row td {
+            background-color: #e7f5ff;
+            font-weight: 700;
+            font-size: 1.25rem;
+            border-top: 2px solid #0056b3;
+            color: #004085;
         }
         ul {
             list-style-type: none;
@@ -131,7 +150,7 @@
 
     <div class="container">
         <h1>🎸 Electric Callboy Concert Trip</h1>
-        <h2>Final Itinerary & Costs</h2>
+        <h2>Final Itinerary & Costs (v5.0)</h2>
 
         <h2>Overview</h2>
         <table class="overview-table">
@@ -145,7 +164,7 @@
             </tr>
             <tr>
                 <th>Travelers:</th>
-                <td>5 (Jeremiah, Blake, Jenna, Richard, Andrew)</td>
+                <td>3, 4, or 5 (Jeremiah, Blake, Jenna, Richard, Andrew)</td>
             </tr>
             <tr>
                 <th>Transportation:</th>
@@ -153,7 +172,7 @@
             </tr>
             <tr>
                 <th>Accommodations:</th>
-                <td>Hyatt Place Salt Lake City/Downtown/The Gateway (2 Nights, 2 Rooms)</td>
+                <td>Hyatt Place Salt Lake City/Downtown/The Gateway</td>
             </tr>
             <tr>
                 <th>Main Event:</th>
@@ -225,36 +244,63 @@
             <li>Thursday, April 30 (All day, arriving back in the morning)</li>
         </ul>
 
-        <h2>Trip Cost Breakdown</h2>
-        <p>I think one person should pay for the shared costs upfront. This is the final breakdown of what each person will owe.</p>
+        <h2>Trip Cost Scenarios</h2>
+        <p>This breakdown shows the total cost and per-person cost for different group sizes. All scenarios are for the 2-night stay.
+        <br><em>(Hotel cost is based on $409.57 per room for the 2-night stay.)</em>
+        </p>
+        
         <table class="cost-table">
             <thead>
                 <tr>
-                    <th>Item</th>
-                    <th>Total Estimated Cost</th>
-                    <th>Cost Per Person (Total ÷ 5)</th>
+                    <th>Cost Component</th>
+                    <th>Scenario 1 (Current)</th>
+                    <th>Scenario 2</th>
+                    <th>Scenario 3</th>
+                    <th>Scenario 4</th>
+                </tr>
+                <tr class="subheader">
+                    <th></th>
+                    <th>5 Travelers / 2 Rooms</th>
+                    <th>5 Travelers / 1 Room</th>
+                    <th>4 Travelers / 1 Room</th>
+                    <th>3 Travelers / 1 Room</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>Amtrak Tickets</strong> (Round Trip for 5)</td>
+                    <td><strong>Amtrak Tickets</strong> ($68/person)</td>
                     <td>$340.00</td>
-                    <td>$68</td>
+                    <td>$340.00</td>
+                    <td>$272.00</td>
+                    <td>$204.00</td>
                 </tr>
                 <tr>
-                    <td><strong>Hotel:</strong> Hyatt Place (2 Nights, 2 Rooms)</td>
+                    <td><strong>Hotel</strong> ($409.57/room)</td>
                     <td>$819.14</td>
-                    <td>$163.83</td>
+                    <td>$409.57</td>
+                    <td>$409.57</td>
+                    <td>$409.57</td>
                 </tr>
                 <tr>
-                    <td><strong>Concert Tickets</strong> (5 GA Tickets)</td>
+                    <td><strong>Concert Tickets</strong> ($73.75/person)</td>
                     <td>$368.75</td>
-                    <td>$73.75</td>
+                    <td>$368.75</td>
+                    <td>$295.00</td>
+                    <td>$221.25</td>
                 </tr>
                 <tr class="total-row">
-                    <td><strong>FINAL SHARED TOTAL</strong></td>
+                    <td><strong>TOTAL GROUP COST</strong></td>
                     <td><strong>$1,527.89</strong></td>
+                    <td><strong>$1,118.32</strong></td>
+                    <td><strong>$976.57</strong></td>
+                    <td><strong>$834.82</strong></td>
+                </tr>
+                <tr class="per-person-row">
+                    <td><strong>FINAL COST PER PERSON</strong></td>
                     <td><strong>$305.58</strong></td>
+                    <td><strong>$223.66</strong></td>
+                    <td><strong>$244.14</strong></td>
+                    <td><strong>$278.27</strong></td>
                 </tr>
             </tbody>
         </table>
